@@ -1,0 +1,27 @@
+<nav>
+<ul>
+  <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+  <li><a routerLink="/data-table" routerLinkActive="active">My Data</a></li>
+</ul>
+
+</nav>
+
+
+
+
+  
+  <!-- Links -->
+  <div class="card-container">
+    
+    {{outputData}}
+    <app-grid [item]="gridData" (itemEvent)="addItem($event)"></app-grid>
+
+
+    <!-- navbar
+    sibar
+    grid tbale -->
+  
+  </div>
+
+
+<router-outlet></router-outlet>
